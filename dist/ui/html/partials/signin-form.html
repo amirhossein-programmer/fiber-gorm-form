@@ -1,0 +1,12 @@
+{{define "signin"}}
+<fieldset>
+    <legend>signin</legend>
+    <form action="http://localhost:4000/api/users" method="post">
+        <input type="text" id="first-name" name="FirstName" placeholder="firstname" isrequired>
+        <input type="text" id="last-name" name="LastName" placeholder="lastname" isrequired>
+        <input type="email" id="email" name="Email" placeholder="Email" isrequired>
+        <input type="password" id="password" name="Password" placeholder="Password" isrequired>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</fieldset>
+{{end}}
